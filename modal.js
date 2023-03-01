@@ -32,7 +32,6 @@ function screen() {
   nav.forEach((item) => {
     item.addEventListener("mousemove", (e) => {
       indicator.style.transitionDelay = "0s";
-      //indicator.style.transform = "translateX(calc(" + e.offsetLeft + "px" + " - 796px))";
       indicator.style.top = e.target.offsetTop + "px";
       indicator.style.left = e.target.offsetLeft + "px";
       indicator.style.width = e.target.offsetWidth + "px";
@@ -275,42 +274,3 @@ function validCGV() {
     return false;
   }
 }
-
-//Variation pour un contrôle instantané
-
-// let verifFirst;
-
-
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   if (
-//     verifFirst === true
-//   ) {
-//     bground.style.display = "none";
-//     bground_thanks.style.display = "block";
-//   }
-// });
-
-
-// first.addEventListener("input", () => {
-//   const value = first.value.trim();
-
-//   if (first.value.trim() === "") {
-//     setErreur(first, "Veuillez renseigner un prénom.");
-//     verifFirst = false;
-//   } else if (numbReg.test(value) === false) {
-//     setErreur(first, "Veuillez entrer au minimum 2 lettres.");
-//     verifFirst = false;
-//   } else if (nameReg.test(value) === false) {
-//     setErreur(first, "Veuillez entrer un prénom valide.");
-//     verifFirst = false;
-//   } else if (dualReg.test(value) === true) {
-//     setErreur(first, "Veuillez entrer un prénom valide.");
-//     verifFirst = false;
-//   } else {
-//     setValid(first);
-//     verifFirst = true;
-//   }
-
-// });
