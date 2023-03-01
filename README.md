@@ -18,4 +18,4 @@ Langage solicité:
 
 # Aperçu
 
-![screenshot du site](./maquette.png)
+![screenshot du site](./media/maquette.png)
