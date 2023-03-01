@@ -81,8 +81,6 @@ btn_signup.forEach((button) => {
 
 close.forEach((button) => {
   button.addEventListener("click", () => {
-    bground.style.display = "none";
-    bground_thanks.style.display = "none";
     window.location.reload();
   });
 });
