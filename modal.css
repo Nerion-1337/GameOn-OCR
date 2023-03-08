@@ -491,8 +491,17 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  .bground{
+    background: transparent;
+    position: fixed;
+    top: 8%;
+  }
   .content {
-    margin: 20% auto;
+
+    width: 100vw;
+    max-width: 100%;
+    height: 92%;
+    overflow: scroll;
   }
   .topnav a {
     display: none;
