@@ -4,6 +4,7 @@ const topNav = document.getElementById("myTopnav");
 
 icon.addEventListener("click", () => {
   topNav.classList.toggle("responsive");
+  screen();
 });
 
 //Select Nav Animation
