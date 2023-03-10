@@ -73,6 +73,7 @@ const btn_signup = document.querySelectorAll(".btn-signup");
 const bground = document.querySelector(".bground");
 const close = document.querySelectorAll(".toclose");
 const bground_thanks = document.querySelector(".bground-thanks");
+const closelater = document.querySelector(".closelater")
 
 btn_signup.forEach((button) => {
   button.addEventListener("click", () => {
@@ -85,6 +86,11 @@ close.forEach((button) => {
     window.location.reload();
   });
 });
+
+closelater.addEventListener("click", () =>{
+  bground.style.display = "none";
+})
+
 
 //Condition Formulaire
 const form = document.querySelector("#form");
