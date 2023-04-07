@@ -8,7 +8,6 @@ icon.addEventListener("click", () => {
 });
 
 //Select Nav Animation
-const mql = window.matchMedia("(min-width: 800px)");
 const nav = document.querySelectorAll(".nav");
 const lien = document.querySelectorAll("a");
 const home = document.getElementById("home");
@@ -19,6 +18,7 @@ function screen() {
   lien.forEach((link) => {
     if (link.href === url) {
       link.classList.add("active");
+      setTimeout(() => {
       const top = link.offsetTop;
       const left = link.offsetLeft;
       const height = link.offsetHeight;
@@ -27,6 +27,7 @@ function screen() {
       indicator.style.top = top + "px";
       indicator.style.width = width + "px";
       indicator.style.height = height + "px";
+      }, 500);
     }
   });
 
