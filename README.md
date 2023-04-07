@@ -14,7 +14,7 @@ Langage solicité:
 
 # Visiter
 
-[Voir le Rendu](https://nerion-1337.github.io/GameOn---OCR/)
+[Voir le Rendu](https://nerion-1337.github.io/GameOn-OCR/)
 
 # Aperçu
 
